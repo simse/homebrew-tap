@@ -6,7 +6,7 @@ class Qc < Formula
     license "GPL-3.0"
   
     depends_on "go" => :build
-    depends_on "libvips-dev" => :build
+    depends_on "vips" => :build
     depends_on "pkg-config" => :build
     depends_on "libvips"
   
