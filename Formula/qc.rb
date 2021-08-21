@@ -8,7 +8,7 @@ class Qc < Formula
     depends_on "go" => :build
     depends_on "libvips-dev" => :build
     depends_on "pkg-config" => :build
-    deponds_on "libvips"
+    depends_on "libvips"
   
     def install
         ENV["GOPATH"] = HOMEBREW_CACHE/"go_cache"
