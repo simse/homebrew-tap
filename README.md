@@ -1,0 +1,11 @@
+# Simse Tap
+
+## How do I install these formulae?
+
+`brew install simse/tap/<formula>`
+
+Or `brew tap simse/tap` and then `brew install <formula>`.
+
+## Documentation
+
+`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
