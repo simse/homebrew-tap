@@ -1,4 +1,4 @@
-class QuickConvert < Formula
+class Qc < Formula
   desc "qc is a tool for converting between file formats"
   homepage "https://qc.simse.io"
   version "v0.8.5"
