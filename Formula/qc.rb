@@ -9,7 +9,6 @@ class Qc < Formula
   depends_on "vips"
 
   def install
-    install
     ENV["GOPATH"] = HOMEBREW_CACHE/"go_cache"
     ENV["CGO_ENABLED"] = "1"
     ENV["CGO_CFLAGS_ALLOW"] = "-Xpreprocessor"
