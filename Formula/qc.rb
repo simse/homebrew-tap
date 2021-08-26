@@ -5,7 +5,6 @@ class Qc < Formula
   url "https://github.com/simse/qc.git", tag: "v0.8.5", revision: "08eac98cda4b2301662be646c6684782a09c10fc"
 
   depends_on "go" => :build
-  depends_on "vips" => :build
   depends_on "pkg-config" => :build
   depends_on "vips"
 
