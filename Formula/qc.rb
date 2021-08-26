@@ -1,5 +1,5 @@
 class Qc < Formula
-  desc "A tool for converting between file formats"
+  desc "Tool for converting between file formats"
   homepage "https://qc.simse.io"
   url "https://github.com/simse/qc/archive/refs/tags/v0.8.5.tar.gz"
 
