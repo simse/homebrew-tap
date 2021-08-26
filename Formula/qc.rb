@@ -1,16 +1,14 @@
 class Qc < Formula
-  desc "Tool for converting between file formats"
+  desc "Tool for converting between file formats using great C libraries"
   homepage "https://qc.simse.io"
-  url "https://github.com/simse/qc/archive/refs/tags/v0.8.5.tar.gz"
-  sha256 "611906e56c4398b0878da12d81f42d0b7607aae253b28e904e7cbbff627034b2"
+  version "0.8.6"
+  url "https://github.com/simse/qc.git", tag: "0.8.6", revision: "dcd96fb7a087e8b3a20c0fae1b8e60a2033bc71b"
 
   depends_on "go" => :build
   depends_on "pkg-config" => :build
-  depends_on "vips" => :build
   depends_on "vips"
 
   def install
-    install
     ENV["GOPATH"] = HOMEBREW_CACHE/"go_cache"
     ENV["CGO_ENABLED"] = "1"
     ENV["CGO_CFLAGS_ALLOW"] = "-Xpreprocessor"
