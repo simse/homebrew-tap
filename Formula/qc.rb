@@ -1,8 +1,8 @@
 class Qc < Formula
   desc "Tool for converting between file formats"
   homepage "https://qc.simse.io"
-  version "0.8.7"
-  url "https://github.com/simse/qc.git", tag: "0.8.7", revision: "50a36a79dbf5a1a0cdabefa1f96c833192807f08"
+  version "0.8.8"
+  url "https://github.com/simse/qc.git", tag: "0.8.8", revision: "95fd6d6a11bda7e3233f618398a842480b1161cb"
 
   depends_on "go" => :build
   depends_on "pkg-config" => :build
