@@ -5,21 +5,21 @@
 class Ccmd < Formula
   desc "Tool to cache slow commands."
   homepage "https://simse.io/ccmd"
-  version "0.0.5"
+  version "0.0.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/simse/ccmd/releases/download/v0.0.5/ccmd_Darwin_x86_64.tar.gz"
-      sha256 "cc0eb0fe541c023ee364ff7650dc3374268ea4d762dc90b8ec8856b25420912d"
+      url "https://github.com/simse/ccmd/releases/download/v0.0.6/ccmd_Darwin_x86_64.tar.gz"
+      sha256 "d26fd4ce6b6971dc179a3d0c35a86651d0ca2cd1e2f1347c240fe6e142eb7c63"
 
       def install
         bin.install "ccmd"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/simse/ccmd/releases/download/v0.0.5/ccmd_Darwin_arm64.tar.gz"
-      sha256 "875eadcf3dc68517d3c56417140241f9d2c8250c19e6db7b70bb13bdfc8b48d0"
+      url "https://github.com/simse/ccmd/releases/download/v0.0.6/ccmd_Darwin_arm64.tar.gz"
+      sha256 "0b155b5d6a0d5dfd9e376cf7f20090130c63a87ffce9e9e34e0b62e444a0d664"
 
       def install
         bin.install "ccmd"
@@ -29,15 +29,15 @@ class Ccmd < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/simse/ccmd/releases/download/v0.0.5/ccmd_Linux_x86_64.tar.gz"
-      sha256 "6b56a7e82bd72aa43bffd60acc6edab6be2b9e6372011ef801ff93d47370bcd4"
+      url "https://github.com/simse/ccmd/releases/download/v0.0.6/ccmd_Linux_x86_64.tar.gz"
+      sha256 "c7e1f3e45255e8c120734f02b6d797d7a8f4c86a7a130a116c8e32de65a7868c"
       def install
         bin.install "ccmd"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/simse/ccmd/releases/download/v0.0.5/ccmd_Linux_arm64.tar.gz"
-      sha256 "4bf19028f1faf3b2a84ef00d38fff9e79b5147df573daf0c47ec98620ec3e45f"
+      url "https://github.com/simse/ccmd/releases/download/v0.0.6/ccmd_Linux_arm64.tar.gz"
+      sha256 "981c44c655755475229de709e6409ae7076e83356178cb803e1569c7739a2abf"
       def install
         bin.install "ccmd"
       end
